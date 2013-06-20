@@ -11,6 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
+    - javascripts/jquery-1.7.2.min.js
+    - javascripts/d3.v3.min.js
     - javascripts/**/*.js
 
 # stylesheets

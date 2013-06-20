@@ -1,7 +1,9 @@
 describe("Main", function() {
 
-  it("should fail", function() {
-    expect(false).toEqual(true);
+  it("Data table should exist", function() {
+    loadFixtures('data-table.html');
+
+    expect($("#data-table").length).toEqual(1);
   });
 
 });
