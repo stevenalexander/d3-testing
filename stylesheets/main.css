@@ -41,3 +41,13 @@ table#data-table td {
   border-color: #666666;
   background-color: #ffffff;
 }
+
+/* barchart */
+#barchart svg .axis path {
+  fill: none;
+}
+#barchart svg .axis line {
+  stroke: #eee;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
