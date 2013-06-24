@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>D3 Testing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link  href="stylesheets/main.css" rel="stylesheet">
+    <script src="javascripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="content">
+      <h1>D3 Testing example</h1>
+
+      <img id="chart-image" src="chart.jpeg" alt="pre-generated image of chart used for old browsers and when javascript is disabled for graceful degradation" title="pre-generated image of chart used for old browsers and when javascript is disabled for graceful degradation">
+
+      <div id="barchart"></div>
+      <div id="treemap"></div>
+
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount (£)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apples</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Oranges</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>Bananas</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Cherries</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>Strawberries</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--[if gt IE 8]><!-->
+    <script src="javascripts/d3.v3.min.js" type="text/javascript"></script>
+    <script src="javascripts/charts/basechart.js" type="text/javascript"></script>
+    <script src="javascripts/charts/treemap.js" type="text/javascript"></script>
+    <script src="javascripts/charts/barchart.js" type="text/javascript"></script>
+    <script src="javascripts/main.js" type="text/javascript"></script>
+    <!--<![endif]-->
+  </body>
+</html>

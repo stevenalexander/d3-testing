@@ -1,0 +1,59 @@
+body {
+  font: 16px/1.5 verdana, helvetica-neue, helvetica, arial, san-serif;
+  background: #EAEDEF;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0.5em;
+  background: #fff;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+#chart-image {
+  display: block;
+  margin: 0 auto;
+}
+
+table#data-table {
+  color:#333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+table#data-table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+table#data-table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+
+/* barchart */
+#barchart svg .axis path {
+  fill: none;
+}
+#barchart svg .axis line {
+  stroke: #eee;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+/* treemap */
+#treemap .node {
+  overflow: hidden;
+  position: absolute;
+}
