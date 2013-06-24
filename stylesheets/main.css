@@ -51,3 +51,9 @@ table#data-table td {
   stroke-width: 1px;
   shape-rendering: crispEdges;
 }
+
+/* treemap */
+#treemap .node {
+  overflow: hidden;
+  position: absolute;
+}

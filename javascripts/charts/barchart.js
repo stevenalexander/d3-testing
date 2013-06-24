@@ -21,7 +21,7 @@ d3testing.barchart = d3testing.barchart || (function() {
           max_x = d3.max(data, function(d) { return d.amount }),
           max_bar_width = that.opts.width - margin.left - margin.right,
           x = d3.scale.linear().domain([0, max_x]).range([0, max_bar_width]),
-          sorted_data = data.sort(function(a, b){ return d3.descending(a.amount, b.amount); });;
+          sorted_data = data.sort(function(a, b){ return d3.descending(a.amount, b.amount); });
 
       var svg = d3.select("#" + node_id).append("svg:svg")
         .attr("width", that.opts.width)
