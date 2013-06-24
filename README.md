@@ -14,6 +14,15 @@ Github page lives [here](http://stevenalexander.github.io/d3-testing/).
 
 The site is just static html and javascript with the tests stored in the spec folder.
 
+- javascripts - contains static js
+    - charts - contains chart js
+        - basechart.js - base class for both visualisations
+        - barchart.js - visualisation, uses basechart for options and common methods
+        - treemap.js - visualisation, uses basechart for options and common methods
+    - main.js - loads data from table and draws visualisations
+- spec
+    - javascripts - jasmine specs
+
 Requires:
 - ruby (1.9.2+, with gems and bundler)
 
