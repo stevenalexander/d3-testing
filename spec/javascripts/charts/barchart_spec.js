@@ -20,7 +20,10 @@ describe("barchart", function() {
       });
 
       it("should create an svg element under node", function() {
-        expect($("#barchart svg").length).toEqual(1)
+        var barchart_svg = $("#barchart svg");
+        expect(barchart_svg.length).toEqual(1)
+        expect(barchart_svg.css("width")).toEqual(barchart.opts.width + "px")
+        expect(barchart_svg.css("height")).toEqual(barchart.opts.height + "px")
       });
     });
 

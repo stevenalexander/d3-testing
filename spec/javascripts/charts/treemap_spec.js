@@ -20,7 +20,10 @@ describe("treemap", function() {
       });
 
       it("should create a root div element under node", function() {
-        expect($("#treemap div").length).toEqual(1)
+        var treemap_root_div = $("#treemap div");
+        expect(treemap_root_div.length).toEqual(1)
+        expect(treemap_root_div.css("width")).toEqual(treemap.opts.width + "px")
+        expect(treemap_root_div.css("height")).toEqual(treemap.opts.height + "px")
       });
     });
 

@@ -12,6 +12,8 @@ d3testing.basechart = d3testing.basechart || (function() {
   var basechart_obj = function basechart() {
     this.node = null;
     this.opts = {
+      width : 800,
+      height : 400,
       colour_scale : d3.scale.category10()
     };
   };

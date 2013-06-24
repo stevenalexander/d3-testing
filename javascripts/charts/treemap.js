@@ -8,10 +8,14 @@ d3testing.treemap = d3testing.treemap || (function() {
 
   $.extend(treemap_obj.prototype, {
     draw : function(data) {
+      if (this.node == null) { return null; }
+
       var that = this,
           node_id = this.node.id;
 
       var root_div = d3.select("#" + node_id).append("div")
+        .style("width", that.opts.width + "px")
+        .style("height", that.opts.height + "px");
     }
   });
 

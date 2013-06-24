@@ -5,6 +5,10 @@ describe("BaseChart", function() {
     it("should have opts property with colour scale", function() {
       expect(basechart.opts.colour_scale).toBeDefined();
     });
+    it("should have opts properties for default width/height", function() {
+      expect(basechart.opts.width).toEqual(800);
+      expect(basechart.opts.height).toEqual(400);
+    });
   });
 
   describe("get_amount_label", function() {

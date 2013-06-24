@@ -8,10 +8,14 @@ d3testing.barchart = d3testing.barchart || (function() {
 
   $.extend(barchart_obj.prototype, {
     draw : function(data) {
+      if (this.node == null) { return null; }
+
       var that = this,
           node_id = this.node.id;
 
       var svg = d3.select("#" + node_id).append("svg:svg")
+        .attr("width", that.opts.width)
+        .attr("height", that.opts.height);
     }
   });
 
