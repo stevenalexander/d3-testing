@@ -22,6 +22,7 @@ The site is just static html and javascript with the tests stored in the spec fo
     - main.js - loads data from table and draws visualisations
 - spec
     - javascripts - jasmine specs
+        - fixtures - contains the jasmine-jquery html fragments used in tests
 
 Requires:
 - ruby (1.9.2+, with gems and bundler)
