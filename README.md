@@ -6,7 +6,7 @@ There's lot of d3 examples on the web but they mainly very simple tutorial examp
 
 I've created this as an example of how to write testable d3 javascript with inheritance so multiple visualisations can share common functionality. Having a base object for your visualisations means you can write common code once and automated testing allows you to validate changes without manual testing. Obviously there is a limit to how much you can or should test your visualisations without looking at them in browser, but this allows you to write testable code, do TDD coding and encourage re-use in your javascript.
 
-Using [jasmine](http://pivotal.github.io/jasmine/) to test the Javascript, extending jasmine with [jasmine-jquery](https://github.com/velesin/jasmine-jquery) for jquery selectors and ruby (1.9.2+) to install dependencies (not required but makes life easier). I also use [jasmine-headless](http://johnbintz.github.io/jasmine-headless-webkit/) to run tests without opening the browser.
+Using [jasmine](https://jasmine.github.io/) to test the Javascript, extending jasmine with [jasmine-jquery](https://github.com/velesin/jasmine-jquery) for jquery selectors and ruby (1.9.2+) to install dependencies (not required but makes life easier). I also use [jasmine-headless](http://johnbintz.github.io/jasmine-headless-webkit/) to run tests without opening the browser.
 
 Github page lives [here](http://stevenalexander.github.io/d3-testing/).
 
